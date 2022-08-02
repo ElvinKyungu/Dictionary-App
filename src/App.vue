@@ -7,7 +7,7 @@
                 isLoading: false,
                 word: '',
                 results: [],
-                textInfo: true,
+                textInfo: true
             }
         },
         methods: {
