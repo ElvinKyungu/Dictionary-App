@@ -126,38 +126,46 @@ ul .word i{
   font-size: 15px;
   cursor: pointer;
 }
+
 ul .content{
   max-height: 300px;
   margin-top: 2rem;
   overflow-y: auto;
 }
+
 ul .content::-webkit-scrollbar{
   width: 5px;
   color: #c10505;
   background-color: #16001E;
 }
+
 .content li .details{
   padding-left: 10px;
-  border-radius: 4px 0 0 4px;
   border-left: 3px solid #4D59FB;
+  border-radius: 4px 0 0 4px;
 }
+
 .content li p{
   font-size: 17px;
   font-weight: 500;
 }
+
 .content li span{
   font-size: 15px;
   color: #7E7E7E;
 }
+
 .content .synonyms .list{
   display: flex;
   flex-wrap: wrap;
 }
+
 .content .synonyms span{
   cursor: pointer;
   margin-right: 5px;
   text-decoration: underline;
 }
+
 @media screen and (max-width: 400px){
     .wrapper{
       width: 330px;

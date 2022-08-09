@@ -43,7 +43,13 @@
     <div class="wrapper">
         <header>Dictionary App</header>
         <div class="search">
-            <input type="text" v-model="word"  @keyup.enter="fetchData" placeholder="Search a word" required spellcheck="false">
+            <input 
+                type="text" 
+                v-model="word"  
+                @keyup.enter="fetchData" 
+                placeholder="Search a word" 
+                required spellcheck="false"
+            >
             <i class="fas fa-search"></i>
             <span class="material-icons" @click="closeSearch">close</span>
         </div>
@@ -52,7 +58,12 @@
             <p class="info-text" v-else></p>
         </div>
         <div class="content-result" v-if="isSearching">
-            <p class="info-text" v-if="isLoading"><b>{{word}}</b> word search</p>
+            <p 
+                class="info-text" 
+                v-if="isLoading"
+            >
+                <b>{{word}}</b> word search
+            </p>
             <ul v-if="isLoading === false && results.length > 0">
                 
                 <div class="content">
