@@ -11,7 +11,6 @@
             }
         },
         methods: {
-
             fetchData(){
                 this.textInfo = false;
                 this.isLoading = true;
@@ -62,7 +61,7 @@
                 class="info-text" 
                 v-if="isLoading"
             >
-                <b>{{word}}</b> word search
+                <b>{{ word }}</b> word search
             </p>
             <ul v-if="isLoading === false && results.length > 0">
                 
